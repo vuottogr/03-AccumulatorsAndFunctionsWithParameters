@@ -18,11 +18,11 @@ def main():
     # Test your functions by putting calls to them here:
 
     print_sequence1()
-    # draw_circles1()
+    draw_circles1()
     print_sequence2()
-    # draw_circles2()
+    draw_circles2()
     print_sequence3()
-    # draw_circles3()
+    draw_circles3()
     print_cosines()
     draw_cosines_and_sines()
 
