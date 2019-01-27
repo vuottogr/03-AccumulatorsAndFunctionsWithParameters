@@ -89,17 +89,17 @@ def run_test_sum_square_roots():
     print('--------------------------------------------------')
 
 
-    expected = 44.47
+    expected = 68.72
     answer = sum_square_roots(17)
     print('Test 1 expected', expected)
     print('answer', answer)
 
-    expected = 22.49
+    expected = 36.47
     answer = sum_square_roots(11)
     print('Test 2 expected', expected)
     print('answer', answer)
 
-    expected = 394.42
+    expected = 569.7
     answer = sum_square_roots(71)
     print('Test 3 expected', expected)
     print('answer', answer)
@@ -130,7 +130,7 @@ def sum_square_roots(n):
         n = -n
     total = 0
     for k in range(n):
-        total = total + math.sqrt(k)
+        total = total + (math.sqrt(2*(k + 1)))
     return total
 
 # -----------------------------------------------------------------------------
