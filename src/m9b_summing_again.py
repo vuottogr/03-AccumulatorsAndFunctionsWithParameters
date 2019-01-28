@@ -74,7 +74,7 @@ def sum_powers(n, p):
 def run_test_sum_powers_in_range():
     """ Tests the   sum_powers_in_range   function. """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this function.
+    # done: 4. Implement this function.
     #   It TESTS the  sum_powers_in_range  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -86,18 +86,18 @@ def run_test_sum_powers_in_range():
     print('Testing the   sum_powers_in_range   function:')
     print('--------------------------------------------------')
 
-    expected = 1
-    actual = sum_powers_in_range()
+    expected = 142.38
+    actual = sum_powers_in_range(3, 100, .1)
     print('Test 1 expected', expected)
     print('actual', actual)
 
-    expected = 1
-    actual = sum_powers_in_range()
+    expected = 124.70
+    actual = sum_powers_in_range(2, 50, .3)
     print('Test 2 expected', expected)
     print('actual', actual)
 
-    expected = 1
-    actual = sum_powers_in_range()
+    expected = 81.49
+    actual = sum_powers_in_range(4, 25, .5)
     print('Test 3 expected', expected)
     print('actual', actual)
 
@@ -115,21 +115,20 @@ def sum_powers_in_range(m, n, p):
       -- sum_powers_in_range(3, 100, 0.1) returns about 142.384776
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # done: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     #   No fair running the code of  sum_powers_in_range  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # -------------------------------------------------------------------------
 
-    if n < 0:
-        n = -n
-    if m < 0:
-        m = -m
-    n >= m
-    total = 0
-    for k in range (n):
-        total = total + (m)
+
+    if n >= m:
+        total = 0
+        for k in range (m, n + 1, 1):
+            total = total + ((k ** p))
+        return total
+
 
 
 # -----------------------------------------------------------------------------
